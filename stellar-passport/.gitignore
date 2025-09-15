@@ -4,3 +4,10 @@ target
 # Local settings
 .soroban
 .stellar
+
+test-snapshots/*
+__snapshots__/
+**/snapshots/
+**/*.snap
+**/*.snap.new
+**/*.snap.old
