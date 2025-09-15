@@ -167,3 +167,7 @@ impl StellarPassport {
         write_user(&env, &user);
     }
 }
+
+// Include unit tests from `src/test.rs`
+#[cfg(test)]
+mod test;

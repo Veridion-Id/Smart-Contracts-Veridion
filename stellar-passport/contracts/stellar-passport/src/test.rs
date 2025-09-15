@@ -2,10 +2,8 @@
 
 use soroban_sdk::{testutils::Address as _, symbol_short, Address, Env, String};
 
-use verifications::{
-    StellarPassport, StellarPassportClient,
-};
-use verifications::types::VerificationType;
+use crate::{StellarPassport, StellarPassportClient};
+use crate::types::VerificationType;
 
 #[test]
 fn end_to_end_flow() {
