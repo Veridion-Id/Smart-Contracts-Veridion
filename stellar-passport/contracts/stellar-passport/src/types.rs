@@ -3,8 +3,7 @@ use soroban_sdk::{contracttype, Address, String, Symbol};
 /// Tipos de verificación soportados.
 /// `Custom(Symbol)` permite extensiones (p.ej. "over18_cr", "kyc_sumsub").
 #[derive(Clone, Debug, Eq, PartialEq)]
-#[contracttype]
-pub enum VerificationType {
+#[contracttype]pub enum VerificationType {
     Over18,
     Twitter,
     GitHub,
