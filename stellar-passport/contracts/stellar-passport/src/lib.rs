@@ -106,11 +106,13 @@ impl StellarPassport {
         let now = env.ledger().timestamp();
 
         let mut old_points = 0i32;
+        let mut prev_status: Option<Status> = None;
         let mut found_idx: Option<usize> = None;
 
         for (idx, v) in verifs.iter().enumerate() {
             if v.vtype == vtype {
                 old_points = v.points;
+                prev_status = Some(v.status.clone()); 
                 found_idx = Some(idx);
                 break;
             }
@@ -129,6 +131,7 @@ impl StellarPassport {
             points,
             timestamp: now,
             issuer,
+            status: prev_status.unwrap_or(Status::Pending), 
         };
 
         match found_idx {

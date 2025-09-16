@@ -3,13 +3,23 @@ use soroban_sdk::{contracttype, Address, String, Symbol};
 /// Tipos de verificación soportados.
 /// `Custom(Symbol)` permite extensiones (p.ej. "over18_cr", "kyc_sumsub").
 #[derive(Clone, Debug, Eq, PartialEq)]
-#[contracttype]pub enum VerificationType {
+#[contracttype]
+pub enum VerificationType {
     Over18,
     Twitter,
     GitHub,
     BrightID,
     WorldID,
     Custom(Symbol),
+}
+
+/// Estado de una verificación.
+#[derive(Clone, Debug, Eq, PartialEq)]
+#[contracttype]
+pub enum Status {
+    Approved,
+    Rejected,
+    Pending,
 }
 
 /// Una verificación concreta aplicada a un usuario.
@@ -20,6 +30,7 @@ pub struct Verification {
     pub points: i32,
     pub timestamp: u64,     // epoch seconds (host now)
     pub issuer: Address,    // quién la emite (puede ser el propio usuario o un verificador)
+    pub status: Status,     // estado de la verificación
 }
 
 /// Datos agregados del usuario.
