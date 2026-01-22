@@ -33,7 +33,7 @@ The Veridion Identity Verification System provides a decentralized platform for 
 - ✅ **Privacy-preserving** design with optional profile information
 - ✅ **Event-driven architecture** for easy integration with frontends
 - ✅ **Comprehensive testing** with security-focused test cases
-- ✅ **Overflow protection** and safe arithmetic operations
+- ✅ **Overflow protection** and safe arithmetic operation
 
 ## 🏗️ Architecture
 
