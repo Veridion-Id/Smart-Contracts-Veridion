@@ -14,7 +14,6 @@ A comprehensive identity verification and reputation system built on the Stellar
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## 🎯 Overview
 
