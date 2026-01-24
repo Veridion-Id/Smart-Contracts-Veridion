@@ -1,8 +1,8 @@
-# Smart Contracts -> Veridion Identity Verification System
+# Smart Contracts for Veridion Identity Verification System
 
 A comprehensive identity verification and reputation system built on the Stellar blockchain using Soroban smart contracts. This system enables users to build verifiable digital identities through various verification methods and accumulate reputation scores.
 
-## 📋 Table of Contents
+## 📋 Table of Content
 
 - [Overview](#overview)
 - [Architecture](#architecture)
@@ -41,7 +41,7 @@ The system consists of a single main contract that handles all identity and veri
 
 ```
 ┌─────────────────────────────────────┐
-│           StellarPassport           │
+│           Stellar Passport           │
 ├─────────────────────────────────────┤
 │ • User Registration                 │
 │ • Verification Management           │
