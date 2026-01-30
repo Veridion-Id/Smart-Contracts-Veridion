@@ -40,7 +40,7 @@ The system consists of a single main contract that handles all identity and veri
 
 ```
 ┌─────────────────────────────────────┐
-│           Stellar Passport           │
+│           Stellar Passport          | 
 ├─────────────────────────────────────┤
 │ • User Registration                 │
 │ • Verification Management           │
